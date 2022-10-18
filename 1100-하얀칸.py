@@ -20,11 +20,9 @@ for _ in range(8):
 count = 0
 for i in range(len(data)):
     for j in range(len(data)):
-        if (i % 2 == 0) and (j % 2 == 0):
-            if data[i][j] == 'F':
-                count +=1
-        elif (i % 2 == 1) and (j % 2 == 1):
-            if data[i][j] == 'F':
-                count += 1
+        if (i % 2 == 0) and (j % 2 == 0) and (data[i][j] == 'F'):
+            count +=1
+        elif (i % 2 == 1) and (j % 2 == 1) and (data[i][j] == 'F'):
+            count += 1
 print(count)
 
